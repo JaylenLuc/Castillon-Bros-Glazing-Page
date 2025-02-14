@@ -66,21 +66,21 @@ export function NavBar() {
     //contact us
 
   return (
-    <nav className="flex items-center justify-between px-6 py-4 bg-white shadow-md">
+    <nav className= "bg-primary text-primary-foreground border border-border w-full justify-between z-50 sticky top-0 flex items-center justify-between px-6 py-4 shadow-md">
       {/* Left: Logo + Title */}
       <div className="flex items-center space-x-3">
         <Icons.logo className="h-8 w-8" /> {/* Your Logo */}
-        <span className="text-xl font-bold">Your Brand</span>
+        <span className="text-xl font-bold">Castillon Bros Glazing</span>
       </div>
       <div className="flex justify-end">
         <NavigationMenu>
           <NavigationMenuList className="ml-auto">
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Home</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="bg-primary text-primary-foreground border border-border ">Home</NavigationMenuTrigger>
               <NavigationMenuContent>
                 {/* <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                   <li className="row-span-3"> */}
-                <ul className="grid gap-3 p-4">
+                <ul className="grid gap-3 p-4 ">
                   {homeFragments.map((fragment) => (
                     <li key={fragment.href}>
                       <Link href={fragment.href} passHref legacyBehavior>
@@ -94,7 +94,7 @@ export function NavBar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="bg-primary text-primary-foreground border border-border ">Projects</NavigationMenuTrigger>
               <NavigationMenuContent>
                 {/* <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                   {components.map((component) => (
@@ -109,15 +109,15 @@ export function NavBar() {
                 </ul> */}
               </NavigationMenuContent>
             </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/the-team" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                The Team
-                </NavigationMenuLink>
-              </Link>
+            <NavigationMenuItem >
+              <NavigationMenuTrigger className="bg-primary text-primary-foreground border border-border ">
+                <Link href="/the-team" legacyBehavior passHref>            
+                  The Team
+                </Link>
+              </NavigationMenuTrigger>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Contact us</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="bg-primary text-primary-foreground border border-border ">Contact us</NavigationMenuTrigger>
               <NavigationMenuContent>
                 {/* <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                   {components.map((component) => (
