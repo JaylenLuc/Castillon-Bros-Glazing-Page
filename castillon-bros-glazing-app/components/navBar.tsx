@@ -54,8 +54,8 @@ const components: { title: string; href: string; description: string }[] = [
 ]
 
 const homeFragments = [
-    { title: "Home", href: "/#home" },
     { title: "About us", href: "/#about" },
+    { title: "Slide Show", href: "/#slideshow" },
     { title: "Our services", href: "/#services" },
   ];
  
