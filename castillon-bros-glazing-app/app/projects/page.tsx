@@ -21,6 +21,11 @@ const projectsList: any[] = [
         address: "789 Oak St, City, Country",
         contractSize: "$300,000",
         description: "A custom residential glasswork project with intricate detailing."
+    },
+    {k : "proj4", title: "project 4", images: ["/image1.jpg","/image1.jpg","/image1.jpg"],
+        address: "789 Oak St, City, Country",
+        contractSize: "$300,000",
+        description: "A custom residential glasswork project with intricate detailing."
     }
 
 
@@ -31,7 +36,7 @@ export default function Projects() {
         <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)] ">
             <ul className="w-full space-y-8">
                 {projectsList.map((item) => (
-                    <li key={item.k} className="w-full flex flex-col md:flex-row items-center gap-6">
+                    <li key={item.k} className="w-full flex grid-cols-1 sm:grid-cols-[auto_1fr] items-center gap-6">
                         {/* <Separator className="mt-2 mb-2" /> */}
 
                         {/* Left: Resizable Panels for Images */}
