@@ -7,22 +7,22 @@ import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 
 const projectsList: any[] = [
-    {k : "proj1", title: "project 1", images: ["/image1.jpg","/image1.jpg","/image1.jpg"],
+    {k : "proj1", title: "project 1", images: ["/stock.webp","/stock.webp","/stock.webp"],
         address: "123 Main St, City, Country",
         contractSize: "$500,000",
         description: "A modern glass installation project focusing on energy efficiency."
     },
-    {k : "proj2", title: "project 2", images: ["/image1.jpg","/image1.jpg","/image1.jpg"],
+    {k : "proj2", title: "project 2", images: ["/stock.webp","/stock.webp","/stock.webp"],
         address: "456 Elm St, City, Country",
         contractSize: "$750,000",
         description: "A skyscraper glazing project with state-of-the-art materials."
     },
-    {k : "proj3", title: "project 3", images: ["/image1.jpg","/image1.jpg","/image1.jpg"],
+    {k : "proj3", title: "project 3", images: ["/stock.webp","/stock.webp","/stock.webp"],
         address: "789 Oak St, City, Country",
         contractSize: "$300,000",
         description: "A custom residential glasswork project with intricate detailing."
     },
-    {k : "proj4", title: "project 4", images: ["/image1.jpg","/image1.jpg","/image1.jpg"],
+    {k : "proj4", title: "project 4", images: ["/stock.webp","/stock.webp","/stock.webp"],
         address: "789 Oak St, City, Country",
         contractSize: "$300,000",
         description: "A custom residential glasswork project with intricate detailing."
