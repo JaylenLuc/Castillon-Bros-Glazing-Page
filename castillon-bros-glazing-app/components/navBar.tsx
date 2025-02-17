@@ -90,19 +90,6 @@ export function NavBar() {
                     </li>
                   ))}
                 </ul>
-                {/* <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                  <li className="row-span-3"> */}
-                <ul className="grid gap-3 p-4 ">
-                  {homeFragments.map((fragment) => (
-                    <li key={fragment.href}>
-                      <Link href={fragment.href} passHref legacyBehavior>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                          {fragment.title}
-                        </NavigationMenuLink>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem className="relative">

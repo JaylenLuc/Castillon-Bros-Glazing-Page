@@ -5,11 +5,11 @@ import { Skelly } from "@/components/skelly";
 
 
 
-
 export default function Home() {
   return (
     <div id="home" className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)] ">
       <div className="rounded-2xl shadow-lg min-h-screen w-[95%] text-primary flex items-center justify-center">
+            
             <h1 className="text-4xl font-bold text-center">
               Your Title Goes Here and image goes int the back
             </h1>

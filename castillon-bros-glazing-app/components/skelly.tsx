@@ -1,30 +1,47 @@
+import {
+    Avatar,
+    AvatarFallback,
+    AvatarImage,
+  } from "@/components/ui/avatar"
 import { Separator } from "@/components/ui/separator";
 const serviceList: any[] = [
     {
         k : "1",
         name : <span className="text-primary">service 1</span>, 
-        image : <div className="h-12 w-12 rounded-full bg-primary" />,
+        image :     <Avatar>
+                        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                        <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>,
         desc : <span className="">"fdhasjklfhdjksfhdjskahfdkjshfdajskfhdsajkfhdsajklhhfdjksa"</span>
     
     } ,
     {
         k : "2",
         name : <span className="text-primary">service 2</span>, 
-        image : <div className="h-12 w-12 rounded-full bg-primary" />,
+        image :     <Avatar>
+                        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                        <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>,
         desc : <span className="">"fdhasjklfhdjksfhdjskahfdkjshfdajskfhdsajkfhdsajklhhfdjksa"</span>
     
     } ,
     {
         k : "3",
         name : <span className="text-primary">service 3</span>, 
-        image : <div className="h-12 w-12 rounded-full bg-primary" />,
+        image :     <Avatar>
+                        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                        <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>,
         desc : <span className="">"fdhasjklfhdjksfhdjskahfdkjshfdajskfhdsajkfhdsajklhhfdjksa"</span>
     
     } ,
     {
         k : "4",
         name : <span className="text-primary">service 4</span>, 
-        image : <div className="h-12 w-12 rounded-full bg-primary" />,
+        image :     <Avatar>
+                        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                        <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>,
         desc : <span className="">"fdhasjklfhdjksfhdjskahfdkjshfdajskfhdsajkfhdsajklhhfdjksa"</span>
     
     } 
