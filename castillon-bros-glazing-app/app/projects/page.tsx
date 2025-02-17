@@ -62,7 +62,7 @@ export default function Projects() {
                                     </div>
                                 </ResizablePanel>
 
-                                <ResizableHandle />
+                                <ResizableHandle withHandle/>
 
                                 {/* Second Panel (Vertical Group) */}
                                 <ResizablePanel defaultSize={50}>
