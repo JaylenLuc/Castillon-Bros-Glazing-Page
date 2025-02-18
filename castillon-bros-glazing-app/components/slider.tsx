@@ -8,7 +8,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import { Separator } from "@/components/ui/separator";
  
 export function Slider() {
   return (

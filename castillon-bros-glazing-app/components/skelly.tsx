@@ -4,7 +4,7 @@ import {
     AvatarImage,
   } from "@/components/ui/avatar"
 import { Separator } from "@/components/ui/separator";
-const serviceList: any[] = [
+const serviceList = [
     {
         k : "1",
         name : <span className="text-primary">service 1</span>, 
@@ -12,7 +12,7 @@ const serviceList: any[] = [
                         <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
                         <AvatarFallback>CN</AvatarFallback>
                     </Avatar>,
-        desc : <span className="">"fdhasjklfhdjksfhdjskahfdkjshfdajskfhdsajkfhdsajklhhfdjksa"</span>
+        desc : <span >fdhasjklfhdjksfhdjskahfdkjshfdajskfhdsajkfhdsajklhhfdjksa</span>
     
     } ,
     {
@@ -22,7 +22,7 @@ const serviceList: any[] = [
                         <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
                         <AvatarFallback>CN</AvatarFallback>
                     </Avatar>,
-        desc : <span className="">"fdhasjklfhdjksfhdjskahfdkjshfdajskfhdsajkfhdsajklhhfdjksa"</span>
+        desc : <span >fdhasjklfhdjksfhdjskahfdkjshfdajskfhdsajkfhdsajklhhfdjksa</span>
     
     } ,
     {
@@ -32,7 +32,7 @@ const serviceList: any[] = [
                         <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
                         <AvatarFallback>CN</AvatarFallback>
                     </Avatar>,
-        desc : <span className="">"fdhasjklfhdjksfhdjskahfdkjshfdajskfhdsajkfhdsajklhhfdjksa"</span>
+        desc : <span >fdhasjklfhdjksfhdjskahfdkjshfdajskfhdsajkfhdsajklhhfdjksa</span>
     
     } ,
     {
@@ -42,7 +42,7 @@ const serviceList: any[] = [
                         <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
                         <AvatarFallback>CN</AvatarFallback>
                     </Avatar>,
-        desc : <span className="">"fdhasjklfhdjksfhdjskahfdkjshfdajskfhdsajkfhdsajklhhfdjksa"</span>
+        desc : <span >fdhasjklfhdjksfhdjskahfdkjshfdajskfhdsajkfhdsajklhhfdjksa</span>
     
     } 
 

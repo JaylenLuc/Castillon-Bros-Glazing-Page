@@ -7,7 +7,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -48,7 +47,7 @@ const rotationAngles = [-1, 1, -0.5, -0.75];
 export default function Team() {
   const [members, setMembers] = useState(initialMembers);
 
-  const handleSwipe = (direction: "left" | "right") => {
+  const handleSwipe = () => {
     setMembers((prev) => {
       const newMembers = [...prev];
       const firstCard = newMembers.shift();
@@ -73,8 +72,8 @@ export default function Team() {
               dragConstraints={{ left: 0, right: 0 }}
               dragElastic={0.3}
               onDragEnd={(_, info) => {
-                if (info.offset.x > 100) handleSwipe("right");
-                if (info.offset.x < -100) handleSwipe("left");
+                if (info.offset.x > 100) handleSwipe();
+                if (info.offset.x < -100) handleSwipe();
               }}
               initial={{ 
                 y: index * 10, 

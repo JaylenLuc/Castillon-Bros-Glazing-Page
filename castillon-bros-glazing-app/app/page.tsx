@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Slider } from "@/components/slider";
 import { Separator } from "@/components/ui/separator";
 import { Skelly } from "@/components/skelly";

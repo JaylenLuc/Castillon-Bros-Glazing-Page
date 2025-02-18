@@ -3,10 +3,9 @@ import {
     ResizablePanel,
     ResizablePanelGroup,
   } from "@/components/ui/resizable"
-import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 
-const projectsList: any[] = [
+const projectsList = [
     {k : "proj1", title: "project 1", images: ["/stock.webp","/stock.webp","/stock.webp"],
         address: "123 Main St, City, Country",
         contractSize: "$500,000",
