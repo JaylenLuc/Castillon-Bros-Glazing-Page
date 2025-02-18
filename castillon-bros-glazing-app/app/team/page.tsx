@@ -60,6 +60,9 @@ export default function Team() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <h2 className="text-primary text-4xl font-bold text-center">
+            Swipe left or right to meet us!
+        </h2>
       <div className="relative w-[350px] h-[500px] flex justify-center">
         {members.map((item, index) => {
           const isTop = index === 0;

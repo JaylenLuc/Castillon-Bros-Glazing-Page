@@ -76,20 +76,14 @@ export function NavBar() {
                 </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="bg-primary text-primary-foreground border border-border ">Contact us</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                {/* <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                  {components.map((component) => (
-                    <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.href}
-                    >
-                      {component.description}
-                    </ListItem>
-                  ))}
-                </ul> */}
-              </NavigationMenuContent>
+              <Link href="/contact" legacyBehavior passHref>            
+                  <NavigationMenuLink className={cn(
+                    navigationMenuTriggerStyle(),
+                    "bg-primary text-primary-foreground border border-border px-4 py-2 rounded-md"
+                  )}>
+                  Contact Us
+                </NavigationMenuLink>
+                </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
           
