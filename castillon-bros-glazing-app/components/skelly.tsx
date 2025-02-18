@@ -49,23 +49,32 @@ const serviceList = [
 ]
 export function Skelly() {
   return (
-    <>
-        <h1 className="text-2xl font-bold text-center text-primary">Our Services</h1>
-        <ul className="grid gap-3 p-4 ">
-            {serviceList.map((item) => (
-            <li key={item.k}>
-                <div className="flex items-center space-x-4 ">
-                    {item.image}
-                    {item.name} : 
-                    <div className="space-y-2 text-primary">
-                        {item.desc}
-                    </div>
+    <div className="w-full max-w-4xl mx-auto px-4 py-6">
+      <h1 className="text-2xl font-bold text-center text-primary mb-6">
+        Our Services
+      </h1>
+      
+      <ul className="space-y-4">
+        {serviceList.map((item) => (
+          <li key={item.k} className="rounded-lg">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div className="flex-shrink-0">
+                {item.image}
+              </div>
+              
+              <div className="flex-1 space-y-2">
+                <div className="font-medium text-primary">
+                  {item.name}
                 </div>
-                <Separator className="my-2 mt-2 mb-2" />
-            </li>
-            
-            ))}
-        </ul>
-    </>
+                <div className="text-sm text-primary">
+                  {item.desc}
+                </div>
+              </div>
+            </div>
+            <Separator className="mt-4" />
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
