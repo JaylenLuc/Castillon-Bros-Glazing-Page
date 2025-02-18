@@ -13,21 +13,47 @@ import {
 } from "@/components/ui/card";
 
 const initialMembers = [
-  { k: "1", image: "/stock.webp", name: "Issak Flores", phone: "111-111-1111", email: "person@gmail.com", pos: "Position", desc: "Description about yourself" },
-  { k: "2", image: "/stock.webp", name: "Name 1", phone: "111-111-1111", email: "person@gmail.com", pos: "Position", desc: "Description about yourself" },
-  { k: "3", image: "/stock.webp", name: "Name 2", phone: "111-111-1111", email: "person@gmail.com", pos: "Position", desc: "Description about yourself" },
+  {
+    k: "1",
+    image: "/stock.webp",
+    name: "Issak Flores",
+    phone: "111-111-1111",
+    email: "person@gmail.com",
+    pos: "Position",
+    desc: "Description about yourself"
+  },
+  {
+    k: "2",
+    image: "/stock.webp",
+    name: "Name 1",
+    phone: "111-111-1111",
+    email: "person@gmail.com",
+    pos: "Position",
+    desc: "Description about yourself"
+  },
+  {
+    k: "3",
+    image: "/stock.webp",
+    name: "Name 2",
+    phone: "111-111-1111",
+    email: "person@gmail.com",
+    pos: "Position",
+    desc: "Description about yourself"
+  },
 ];
+
+// Predefined rotation angles for consistent server/client rendering
+const rotationAngles = [-1, 1, -0.5, -0.75];
 
 export default function Team() {
   const [members, setMembers] = useState(initialMembers);
 
-  // Handle swipe gesture
   const handleSwipe = (direction: "left" | "right") => {
     setMembers((prev) => {
       const newMembers = [...prev];
-      const firstCard = newMembers.shift(); // Remove first card
+      const firstCard = newMembers.shift();
       if (firstCard) {
-        newMembers.push(firstCard); // Move it to the back
+        newMembers.push(firstCard);
       }
       return newMembers;
     });
@@ -38,22 +64,40 @@ export default function Team() {
       <div className="relative w-[350px] h-[500px] flex justify-center">
         {members.map((item, index) => {
           const isTop = index === 0;
-
+          
           return (
             <motion.div
               key={item.k}
               className="absolute w-[350px]"
-              drag={isTop ? "x" : false} // Only top card is draggable
+              drag={isTop ? "x" : false}
               dragConstraints={{ left: 0, right: 0 }}
               dragElastic={0.3}
               onDragEnd={(_, info) => {
-                if (info.offset.x > 100) handleSwipe("right"); // Swipe right
-                if (info.offset.x < -100) handleSwipe("left"); // Swipe left
+                if (info.offset.x > 100) handleSwipe("right");
+                if (info.offset.x < -100) handleSwipe("left");
               }}
-              initial={{ y: index * 10, scale: 1 - index * 0.05, rotate: Math.random() * 4 - 2 }}
-              animate={{ y: index * 10, scale: 1 - index * 0.05, rotate: Math.random() * 4 - 2 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              style={{ zIndex: members.length - index }}
+              initial={{ 
+                y: index * 10, 
+                scale: 1 - index * 0.05, 
+                rotate: rotationAngles[index % rotationAngles.length] 
+              }}
+              animate={{ 
+                y: index * 10, 
+                scale: 1 - index * 0.05, 
+                rotate: rotationAngles[index % rotationAngles.length]
+              }}
+              transition={{ 
+                type: "spring", 
+                stiffness: 300, 
+                damping: 20 
+              }}
+              style={{ 
+                zIndex: members.length - index,
+                touchAction: "pan-y",
+                userSelect: "none",
+                WebkitTouchCallout: "none",
+                WebkitUserSelect: "none"
+              }}
             >
               <Card className="w-[350px] shadow-lg">
                 <CardHeader className="flex items-center gap-4">
