@@ -36,7 +36,8 @@ export default function Projects() {
         <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)] ">
             <ul className="w-full space-y-8">
                 {projectsList.map((item) => (
-                    <li key={item.k} className="w-full flex grid-cols-1 sm:grid-cols-[auto_1fr] items-center gap-6">
+
+                    <li key={item.k} className="min-h-[300px] w-full flex grid-cols-1 sm:grid-cols-[auto_1fr] items-center gap-6">
                         {/* <Separator className="mt-2 mb-2" /> */}
 
                         {/* Left: Resizable Panels for Images */}
@@ -47,7 +48,7 @@ export default function Projects() {
                                 className="max-w-lg rounded-lg border md:min-w-[450px]"
                             >
                                 {/* First Panel */}
-                                <ResizablePanel defaultSize={50}>
+                                <ResizablePanel defaultSize={150}>
                                     <div className="relative h-[200px] w-full">
                                         <Image
                                             src={item.images[0]}
@@ -65,7 +66,7 @@ export default function Projects() {
                                 <ResizableHandle withHandle/>
 
                                 {/* Second Panel (Vertical Group) */}
-                                <ResizablePanel defaultSize={50}>
+                                <ResizablePanel defaultSize={100}>
                                     <ResizablePanelGroup direction="vertical">
                                         {/* Second Panel */}
                                         <ResizablePanel defaultSize={25}>

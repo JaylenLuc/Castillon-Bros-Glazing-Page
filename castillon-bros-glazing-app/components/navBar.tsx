@@ -103,11 +103,14 @@ export function NavBar() {
             </Link>
             </NavigationMenuItem>
             <NavigationMenuItem >
-              <NavigationMenuTrigger className="bg-primary text-primary-foreground border border-border ">
-                <Link href="/the-team" legacyBehavior passHref>            
+                <Link href="/team" legacyBehavior passHref>            
+                  <NavigationMenuLink className={cn(
+                    navigationMenuTriggerStyle(),
+                    "bg-primary text-primary-foreground border border-border px-4 py-2 rounded-md"
+                  )}>
                   The Team
+                </NavigationMenuLink>
                 </Link>
-              </NavigationMenuTrigger>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger className="bg-primary text-primary-foreground border border-border ">Contact us</NavigationMenuTrigger>
