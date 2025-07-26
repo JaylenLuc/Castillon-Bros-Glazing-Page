@@ -39,7 +39,7 @@ export default function Home() {
       {/* Slideshow Section */}
       <div 
         id="slideshow" 
-        className="scroll-mt-16 w-full px-4 md:px-8 py-8"
+        className="scroll-mt-16 w-full px-4 md:px-16 py-8"
       >
         <Slider />
       </div>
