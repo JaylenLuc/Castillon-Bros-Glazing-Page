@@ -9,13 +9,20 @@ export default function Home() {
       className="flex flex-col w-full min-h-screen font-[family-name:var(--font-geist-sans)]"
     >
       {/* Hero Section */}
-      <div className="w-full min-h-[50vh] md:min-h-[70vh] p-4 md:p-8 mb-8">
-      <div className="rounded-2xl shadow-lg min-h-screen w-[95%] text-primary flex items-center justify-center">
-        <h1 className="text-4xl font-bold text-center">
-            Your Title Goes Here and image goes int the back
+    <div className="w-full min-h-[50vh] md:min-h-[70vh] p-4 md:p-8 mb-8">
+      <div className="relative rounded-2xl shadow-lg min-h-screen w-full text-primary flex items-center justify-center overflow-hidden">
+        <img
+          src="/cover.png"
+          alt="Cover"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        />
+        <h1 className="relative z-10 text-4xl font-bold text-center text-white drop-shadow-lg">
+          World class glazing 
         </h1>
-      </div> 
+        {/* Optionally, add a semi-transparent overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/40 z-0" />
       </div>
+    </div>
 
       <Separator className="w-[90%] mx-auto" />
 
