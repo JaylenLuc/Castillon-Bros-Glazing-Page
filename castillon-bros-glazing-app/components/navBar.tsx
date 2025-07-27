@@ -28,15 +28,11 @@ export function NavBar() {
 
   return (
     <nav className="bg-primary text-primary-foreground w-full z-50 sticky top-0 shadow-md">
-      <div className="max-w-screen-xl mx-auto px-4">
-        <div className="flex items-center justify-between py-4">
+      <div className="max-w-screen-xl mx-auto">
+        <div className="flex items-center justify-between px-4 py-4">
           {/* Left: Logo + Title */}
           <div className="flex items-center space-x-3">
-            <Icons.logo
-              src="/logo.png"
-              alt="Castillon Bros Glazing Logo"
-              className="h-16 w-16"
-            />
+            <Icons.logo className="h-8 w-8" />
             <span className="text-lg sm:text-xl font-bold whitespace-nowrap">
               Castillon Bros Glazing
             </span>

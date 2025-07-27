@@ -1,6 +1,7 @@
 import { Slider } from "@/components/slider";
 import { Separator } from "@/components/ui/separator";
 import { Skelly } from "@/components/skelly";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,20 +10,21 @@ export default function Home() {
       className="flex flex-col w-full min-h-screen font-[family-name:var(--font-geist-sans)]"
     >
       {/* Hero Section */}
-    <div className="w-full min-h-[50vh] md:min-h-[70vh] p-4 md:p-8 mb-8">
-      <div className="relative rounded-2xl shadow-lg min-h-screen w-full text-primary flex items-center justify-center overflow-hidden">
-        <img
-          src="/cover.png"
-          alt="Cover"
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        />
-        <h1 className="relative z-10 text-4xl font-bold text-center text-white drop-shadow-lg">
-          World class glazing 
-        </h1>
-        {/* Optionally, add a semi-transparent overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40 z-0" />
+      <div className="w-full p-4 md:p-8 mb-8">
+        <div className="relative rounded-2xl shadow-lg min-h-[50vh] md:min-h-[70vh] w-full max-w-screen-xl mx-auto text-primary flex items-center justify-center overflow-hidden">
+          <Image
+            src="/cover.png"
+            alt="Cover"
+            fill
+            className="object-cover z-0"
+            priority
+          />
+          <h1 className="relative z-10 text-4xl font-bold text-center text-white drop-shadow-lg">
+            World class glazing 
+          </h1>
+          <div className="absolute inset-0 bg-black/40 z-0" />
+        </div>
       </div>
-    </div>
 
       <Separator className="w-[90%] mx-auto" />
 
