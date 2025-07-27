@@ -32,7 +32,9 @@ export function NavBar() {
         <div className="flex items-center justify-between px-4 py-4">
           {/* Left: Logo + Title */}
           <div className="flex items-center space-x-3">
-            <Icons.logo className="h-8 w-8" />
+            <Icons.logo
+              className="h-8 w-8"
+            />
             <span className="text-lg sm:text-xl font-bold whitespace-nowrap">
               Castillon Bros Glazing
             </span>
