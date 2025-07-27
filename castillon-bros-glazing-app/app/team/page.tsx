@@ -101,7 +101,7 @@ export default function Team() {
                 WebkitUserSelect: "none"
               }}
             >
-              <Card className="w-[350px] shadow-lg">
+              <Card className="w-[350px] shadow-lg border-4 border-solid">
                 <CardHeader className="flex items-center gap-4">
                   <Avatar className="w-12 h-12">
                     <AvatarImage src={item.image} alt="@shadcn" />
